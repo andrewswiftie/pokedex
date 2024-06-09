@@ -1,0 +1,74 @@
+@font-face { /* Fuente externa */
+    font-family: 'PokemonSolid';
+    src: url('./fontPokemon/PokemonSolid.ttf') format('truetype');
+}
+@font-face{ /* Fuente externa */
+    font-family: 'PokemonClassic';
+    src: url('./fontPokemon/PokemonClassic.ttf') format('truetype');
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f15454;
+}
+
+.pokedex-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.pokemon-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.pokemon-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.pokemon-card h3 {
+    font-family: 'PokemonClassic';
+    margin: 10px 0 5px;
+    font-size: 14px;
+}
+
+.pokemon-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #000000;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title h1 {
+    text-align: center;
+    font-size: 60px;
+    color: rgb(235, 242, 43);
+    font-family: 'PokemonSolid';
+    text-shadow:  /* Contorno azul en título */
+        -1px -1px 0 #436be2,  
+        1px -1px 0 #436be2,  
+        -1px 1px 0  #436be2, 
+        1px 1px 0  #436be2, 
+        -2px -2px 0  #436be2,  
+        2px -2px 0  #436be2, 
+        -2px 2px 0 #436be2, 
+        2px 2px 0  #436be2,
+        -3px -3px 0  #436be2,  
+        3px -3px 0  #436be2, 
+        -3px 3px 0 #436be2, 
+        3px 3px 0  #436be2,
+        -4px -4px 0  #436be2,  
+        4px -4px 0  #436be2, 
+        -4px 4px 0 #436be2, 
+        4px 4px 0  #436be2;
+}
+
