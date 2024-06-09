@@ -8,11 +8,11 @@ new Vue({
     },
     methods: {
         async fetchPokemons() {
-            for (let i = 1; i <= 30; i++) { 
+            for (let i = 1; i <= 30; i++) {  /*iteracion para mostrar datos de los primeros 30 pokemones */
                 try {
-                    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}`);
+                    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}`); /* api pokedex */
                     const data = await response.json();
-                    const pokemon = {
+                    const pokemon = { /* almacenamiento de los datos del pokemon*/
                         id: data.id,
                         name: data.name.charAt(0).toUpperCase() + data.name.slice(1),
                         image: data.sprites.front_default,
